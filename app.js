@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.get('/test', (req, res) => {
     pool.query('select now()', (err, result) => {
-        res.send(result.rows)
+        res.send(result)
     })
 })
 
